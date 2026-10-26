@@ -12,4 +12,9 @@ int main() {
 	cout << "Normal" << endl;
 	cout << "12/25/2021" << endl;
 	cout << test2.toString() << endl; cout << endl;
+
+	Date test3(3, 13, 11);
+	cout << "Normal" << endl;
+	cout << "3/13/11" << endl;
+	cout << test3.toString() << endl; cout << endl;
 }

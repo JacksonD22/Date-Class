@@ -6,11 +6,11 @@ Date::Date(int month, int day, int year) : month(1), day(1), year(1900)
 	setDate(month, day, year);
 }
 
-void Date::setDate(int month, int day, int year) {
-	if (year >= 1 && month >= 12 && day >= 1) {
-		month = month;
-		day = day;
-		year = year;
+void Date::setDate(int m, int d, int y) {
+	if (y >= 1 && m >= 12 && d >= 1) {
+		month = m;
+		day = d;
+		year = y;
 	}
 	else {
 		month = 1;

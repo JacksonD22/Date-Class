@@ -13,7 +13,7 @@ private:
 	string monthName() const;
 public:
 	Date(int month = 1, int day = 1, int year = 1900);
-	void setDate(int month, int day, int year);
+	void setDate(int m, int d, int y);
 	int setDay() const;
 	int setMonth() const;
 	int setYear() const;
