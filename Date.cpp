@@ -48,6 +48,11 @@ bool Date::isLeapYear(int year) const
 	return year % 4 == 0;
 }
 
+int Date::lastDay() const
+{
+	return lastDay(month, year);
+}
+
 int Date::lastDay(int month, int year) const
 {
 	if (month == 2)
@@ -61,4 +66,9 @@ int Date::lastDay(int month, int year) const
 	else
 		return 31;
 	return 0;
+}
+
+string Date::toString() const
+{
+	return to_string(month) + "/" + to_string(day) + "/" + to_string(year);
 }

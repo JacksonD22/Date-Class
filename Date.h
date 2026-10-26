@@ -21,6 +21,7 @@ public:
 	bool isLeapYear(int year) const;
 	int lastDay() const;
 	int lastDay(int month, int year) const;
+	string toString() const;
 };
 
 
