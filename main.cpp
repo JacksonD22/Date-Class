@@ -3,6 +3,12 @@
 using namespace std;
 
 int main() {
+	Date EXAMPLE;
+	cout << "EXAMPLE (Test name)" << endl;
+	cout << "Intended result in MM/DD/YYYY format" << endl;
+	cout << "Actual result:" << endl;
+	cout << "MM/DD/YYYY \nMonth Day, Year \nDay Month Year\n" << endl;
+
 	Date test1;
 	cout << "Default" << endl;
 	cout << "1/1/1900" << endl;
@@ -65,4 +71,29 @@ int main() {
 	cout << test9.toString() << endl;
 	cout << test9.toStringMonth() << endl;
 	cout << test9.toStringDay() << endl; cout << endl;
+
+	Date test10(4, 31, 2000);
+	cout << "Invalid Day" << endl;
+	cout << "1/1/1900" << endl;
+	cout << test10.toString() << endl;
+	cout << test10.toStringMonth() << endl;
+	cout << test10.toStringDay() << endl; cout << endl;
+
+	Date test11(13, 10, 2000);
+	cout << "Invalid Month" << endl;
+	cout << "1/1/1900" << endl;
+	cout << test11.toString() << endl;
+	cout << test11.toStringMonth() << endl;
+	cout << test11.toStringDay() << endl; cout << endl;
+
+	Date test12(1, 2, 2000);
+	cout << "Month" << endl;
+	cout << "1" << endl;
+	cout << test12.setMonth() << "\n" << endl;
+	cout << "Day" << endl;
+	cout << "2" << endl;
+	cout << test12.setDay() << "\n" << endl;
+	cout << "Year" << endl;
+	cout << "2000" << endl;
+	cout << test12.setYear() << "\n" << endl;
 }
