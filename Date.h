@@ -22,6 +22,8 @@ public:
 	int lastDay() const;
 	int lastDay(int month, int year) const;
 	string toString() const;
+	string toStringMonth() const;
+	string toStringDay() const;
 };
 
 
