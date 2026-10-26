@@ -7,7 +7,7 @@ Date::Date(int month, int day, int year) : month(1), day(1), year(1900)
 }
 
 void Date::setDate(int m, int d, int y) {
-	if (y >= 1 && m <= 12 && m >= 1 && d >= 1) {
+	if (y >= 1 && m <= 12 && m >= 1 && d >= 1 && d <= lastDay(m, y)) {
 		month = m;
 		day = d;
 		year = y;
@@ -34,7 +34,7 @@ int Date::setYear() const
 	return year;
 }
 
-bool Date::isleapYear() const
+bool Date::isLeapYear() const
 {
 	return isLeapYear(year);
 }

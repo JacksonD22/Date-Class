@@ -17,7 +17,7 @@ public:
 	int setDay() const;
 	int setMonth() const;
 	int setYear() const;
-	bool isleapYear() const;
+	bool isLeapYear() const;
 	bool isLeapYear(int year) const;
 	int lastDay() const;
 	int lastDay(int month, int year) const;
