@@ -19,3 +19,32 @@ void Date::setDate(int month, int day, int year) {
 	}			
 }
 
+int Date::setMonth() const
+{
+	return month;
+}
+
+int Date::setDay() const
+{
+	return day;
+}
+
+int Date::setYear() const 
+{
+	return year;
+}
+
+bool Date::isleapYear() const
+{
+	return isLeapYear(year);
+}
+
+bool Date::isLeapYear(int year) const
+{
+	if (year % 400 == 0)
+		return true;
+	if (year % 100 == 0)
+		return false;
+	return year % 4 == 0;
+}
+
