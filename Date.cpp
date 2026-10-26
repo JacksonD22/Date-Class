@@ -7,7 +7,7 @@ Date::Date(int month, int day, int year) : month(1), day(1), year(1900)
 }
 
 void Date::setDate(int m, int d, int y) {
-	if (y >= 1 && m >= 12 && d >= 1) {
+	if (y >= 1 && m <= 12 && m >= 1 && d >= 1) {
 		month = m;
 		day = d;
 		year = y;
@@ -55,7 +55,7 @@ int Date::lastDay() const
 
 int Date::lastDay(int month, int year) const
 {
-	if (month == 1)
+	if (month == 2)
 	{
 		if (isLeapYear(year))
 			return 29;
@@ -86,5 +86,5 @@ string Date::toStringMonth() const
 
 string Date::toStringDay() const
 {
-	return to_string(day) + " " + monthName() + ", " + to_string(year);
+	return to_string(day) + " " + monthName() + " " + to_string(year);
 }
